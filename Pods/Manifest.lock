@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.0.1)
+  - ObjectMapper (2.1.0)
+  - Pulsator (0.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - ObjectMapper (~> 2.1)
+  - Pulsator
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  ObjectMapper: e5e0f8aef8590fc2ddcde7f27eddb255863ee6e9
+  Pulsator: 0df1d24c09354555be8f4c386ba7c4df297690eb
+
+PODFILE CHECKSUM: f77a288cada15f90db579510da1e6558f9c7553e
+
+COCOAPODS: 1.0.1
