@@ -13,14 +13,22 @@ import Pulsator
 import Alamofire
 import ObjectMapper
 
+protocol ViewControllerDelegate {
+    //success(response.result.value!)
+    //failure("Domain can't be reached." , true)
+    func successRespone(data:String)
+    func failedRespone(error:String,retry:Bool)
+}
 
-class ViewController: UIViewController , MKMapViewDelegate  {
+class ViewController: UIViewController , MKMapViewDelegate ,ViewControllerDelegate{
+
     // =========================================================================
     // MARK: - Variable Declaration
     @IBOutlet weak var msgBoxTopConstrain: NSLayoutConstraint!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var lblMsgContent: UILabel!
    
+    
     enum dataError: Error {
         case emptyData
         case Unknown
@@ -52,56 +60,48 @@ class ViewController: UIViewController , MKMapViewDelegate  {
                            options: .curveEaseIn, animations: {
                             self.dropdownShow()
                             self.view.layoutIfNeeded()
-                },completion: {
-                    finished in
-                    self.callingWebService()
+                },
+                completion: {
+                finished in
+                    self.createOrder()
             })
         }
     }
     // =========================================================================
     // MARK: - Data processing
-    
-    func callingWebService(){
-        // http://www.mocky.io/v2/57f921880f0000b6145a7ce3 - invalid format
-        // http://www.mocky.io/v2/57f915490f000074135a7ce1 - correct
-        Alamofire.request("http://www.mocky.io/v2/57f915490f000074135a7ce1").validate().responseString { response in
-            switch response.result {
-            case .success:
-                self.success(data: response.result.value!)
-            case .failure( _):
-                self.failure(error: "Domain can't be reached." , retry: true)
-            }
-        }
+   
+    func createOrder(){
+        let lib = library()
+        lib.delegate = self
+        let action = library.webservice.createOrder
+        lib.callingWebService(action)
     }
     
-    func failure(error:String, retry:Bool)
-    {
+    internal func failedRespone(error: String, retry: Bool) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.alertController = UIAlertController(title: "Sorry", message: "\(error)", preferredStyle: .alert)
         var defaultAction = UIAlertAction()
         if(retry){
             defaultAction = UIAlertAction(title: "Try Again", style: .default, handler:  {Void in
-                self.callingWebService()
+                self.createOrder()
             })
         }else{
             defaultAction = UIAlertAction(title: "Stop", style: .default, handler:  nil)
         }
         
         appDelegate.alertController.addAction(defaultAction)
-        
         present(appDelegate.alertController, animated: true, completion: nil)
     }
     
-    func success(data:String)
-    {
+    internal func successRespone(data: String) {
         do {
             _ = try verifyData(names: data)
             self.populateData(data:data)
             self.goPage2()
         } catch dataError.emptyData {
-            failure(error:"Invalid data format Received.Please try again later.", retry:false)
+            failedRespone(error:"Invalid data format Received.Please try again later.", retry:false)
         } catch {
-            print("i dunno")
+            print("Sorry , Unknown Error Occured.")
         }
     }
     
