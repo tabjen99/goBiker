@@ -30,6 +30,10 @@
 		273F70CE1DA9701E000BFBC0 /* motorbike.png in Resources */ = {isa = PBXBuildFile; fileRef = 273F70C71DA9701D000BFBC0 /* motorbike.png */; };
 		273F70CF1DA9701E000BFBC0 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 273F70C81DA9701D000BFBC0 /* gear.png */; };
 		273F70D01DA9701E000BFBC0 /* bg_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 273F70C91DA9701D000BFBC0 /* bg_grey.png */; };
+		274C48A11DA97CDA00A9DCF6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C489E1DA97CDA00A9DCF6 /* Alamofire.framework */; };
+		274C48A21DA97CDA00A9DCF6 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C489F1DA97CDA00A9DCF6 /* ObjectMapper.framework */; };
+		274C48A31DA97CDA00A9DCF6 /* Pulsator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C48A01DA97CDA00A9DCF6 /* Pulsator.framework */; };
+		274C48A51DA9BF4400A9DCF6 /* library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C48A41DA9BF4400A9DCF6 /* library.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +76,10 @@
 		273F70C71DA9701D000BFBC0 /* motorbike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = motorbike.png; sourceTree = "<group>"; };
 		273F70C81DA9701D000BFBC0 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
 		273F70C91DA9701D000BFBC0 /* bg_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_grey.png; sourceTree = "<group>"; };
+		274C489E1DA97CDA00A9DCF6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		274C489F1DA97CDA00A9DCF6 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/goBiker-asxzdthlzxmpmvcpwlwzmccgjtlb/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		274C48A01DA97CDA00A9DCF6 /* Pulsator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pulsator.framework; path = "Pods/../build/Debug-iphoneos/Pulsator/Pulsator.framework"; sourceTree = "<group>"; };
+		274C48A41DA9BF4400A9DCF6 /* library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = library.swift; sourceTree = "<group>"; };
 		C4D9352B5B68BC8C20957A19 /* Pods_goBiker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goBiker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274C48A11DA97CDA00A9DCF6 /* Alamofire.framework in Frameworks */,
+				274C48A21DA97CDA00A9DCF6 /* ObjectMapper.framework in Frameworks */,
+				274C48A31DA97CDA00A9DCF6 /* Pulsator.framework in Frameworks */,
 				0648723A964F0D78B4DDCE39 /* Pods_goBiker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +120,7 @@
 		273F70771DA8CC79000BFBC0 /* goBiker */ = {
 			isa = PBXGroup;
 			children = (
+				274C48A61DA9D15F00A9DCF6 /* library */,
 				273F70AD1DA93445000BFBC0 /* WebService */,
 				273F70991DA8E244000BFBC0 /* Model */,
 				273F709A1DA8E26C000BFBC0 /* ModelView */,
@@ -168,9 +180,20 @@
 			path = goBiker/Images;
 			sourceTree = "<group>";
 		};
+		274C48A61DA9D15F00A9DCF6 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				274C48A41DA9BF4400A9DCF6 /* library.swift */,
+			);
+			name = library;
+			sourceTree = "<group>";
+		};
 		C00FFCBFC6CD15F0DD728CE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				274C489E1DA97CDA00A9DCF6 /* Alamofire.framework */,
+				274C489F1DA97CDA00A9DCF6 /* ObjectMapper.framework */,
+				274C48A01DA97CDA00A9DCF6 /* Pulsator.framework */,
 				C4D9352B5B68BC8C20957A19 /* Pods_goBiker.framework */,
 			);
 			name = Frameworks;
@@ -322,6 +345,7 @@
 				273F70AA1DA90975000BFBC0 /* confirmationPage.swift in Sources */,
 				273F70811DA8CC7A000BFBC0 /* goBiker.xcdatamodeld in Sources */,
 				273F707B1DA8CC79000BFBC0 /* ViewController.swift in Sources */,
+				274C48A51DA9BF4400A9DCF6 /* library.swift in Sources */,
 				273F709E1DA8E351000BFBC0 /* Bike.swift in Sources */,
 				273F70BF1DA945F8000BFBC0 /* acknowledgePage.swift in Sources */,
 				273F70981DA8DB63000BFBC0 /* Profile.swift in Sources */,
@@ -452,6 +476,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 54QNHN89AF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pulsator",
+				);
 				INFOPLIST_FILE = goBiker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = my.hongleongconnect.s.hongleongconnectWATCH.goBiker;
@@ -466,6 +495,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 54QNHN89AF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pulsator",
+				);
 				INFOPLIST_FILE = goBiker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = my.hongleongconnect.s.hongleongconnectWATCH.goBiker;
