@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0648723A964F0D78B4DDCE39 /* Pods_goBiker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D9352B5B68BC8C20957A19 /* Pods_goBiker.framework */; };
 		273F70791DA8CC79000BFBC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F70781DA8CC79000BFBC0 /* AppDelegate.swift */; };
 		273F707B1DA8CC79000BFBC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F707A1DA8CC79000BFBC0 /* ViewController.swift */; };
 		273F707E1DA8CC79000BFBC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273F707C1DA8CC79000BFBC0 /* Main.storyboard */; };
@@ -30,10 +29,12 @@
 		273F70CE1DA9701E000BFBC0 /* motorbike.png in Resources */ = {isa = PBXBuildFile; fileRef = 273F70C71DA9701D000BFBC0 /* motorbike.png */; };
 		273F70CF1DA9701E000BFBC0 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 273F70C81DA9701D000BFBC0 /* gear.png */; };
 		273F70D01DA9701E000BFBC0 /* bg_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 273F70C91DA9701D000BFBC0 /* bg_grey.png */; };
-		274C48A11DA97CDA00A9DCF6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C489E1DA97CDA00A9DCF6 /* Alamofire.framework */; };
 		274C48A21DA97CDA00A9DCF6 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C489F1DA97CDA00A9DCF6 /* ObjectMapper.framework */; };
-		274C48A31DA97CDA00A9DCF6 /* Pulsator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C48A01DA97CDA00A9DCF6 /* Pulsator.framework */; };
 		274C48A51DA9BF4400A9DCF6 /* library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C48A41DA9BF4400A9DCF6 /* library.swift */; };
+		274C48AA1DA9D2CE00A9DCF6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C48A71DA9D2CE00A9DCF6 /* Alamofire.framework */; };
+		274C48AB1DA9D2CE00A9DCF6 /* Pods_goBiker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C48A81DA9D2CE00A9DCF6 /* Pods_goBiker.framework */; };
+		274C48AC1DA9D2CE00A9DCF6 /* Pulsator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C48A91DA9D2CE00A9DCF6 /* Pulsator.framework */; };
+		274C48B01DAB39AB00A9DCF6 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C48AF1DAB39AB00A9DCF6 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +81,10 @@
 		274C489F1DA97CDA00A9DCF6 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/goBiker-asxzdthlzxmpmvcpwlwzmccgjtlb/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
 		274C48A01DA97CDA00A9DCF6 /* Pulsator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pulsator.framework; path = "Pods/../build/Debug-iphoneos/Pulsator/Pulsator.framework"; sourceTree = "<group>"; };
 		274C48A41DA9BF4400A9DCF6 /* library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = library.swift; sourceTree = "<group>"; };
+		274C48A71DA9D2CE00A9DCF6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		274C48A81DA9D2CE00A9DCF6 /* Pods_goBiker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_goBiker.framework; path = "Pods/../build/Debug-iphoneos/Pods_goBiker.framework"; sourceTree = "<group>"; };
+		274C48A91DA9D2CE00A9DCF6 /* Pulsator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pulsator.framework; path = "Pods/../build/Debug-iphoneos/Pulsator/Pulsator.framework"; sourceTree = "<group>"; };
+		274C48AF1DAB39AB00A9DCF6 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		C4D9352B5B68BC8C20957A19 /* Pods_goBiker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_goBiker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,10 +93,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274C48A11DA97CDA00A9DCF6 /* Alamofire.framework in Frameworks */,
+				274C48AA1DA9D2CE00A9DCF6 /* Alamofire.framework in Frameworks */,
+				274C48AB1DA9D2CE00A9DCF6 /* Pods_goBiker.framework in Frameworks */,
+				274C48AC1DA9D2CE00A9DCF6 /* Pulsator.framework in Frameworks */,
 				274C48A21DA97CDA00A9DCF6 /* ObjectMapper.framework in Frameworks */,
-				274C48A31DA97CDA00A9DCF6 /* Pulsator.framework in Frameworks */,
-				0648723A964F0D78B4DDCE39 /* Pods_goBiker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +133,7 @@
 				273F707A1DA8CC79000BFBC0 /* ViewController.swift */,
 				273F70A91DA90975000BFBC0 /* confirmationPage.swift */,
 				273F70BE1DA945F8000BFBC0 /* acknowledgePage.swift */,
+				274C48AF1DAB39AB00A9DCF6 /* test.swift */,
 				273F707C1DA8CC79000BFBC0 /* Main.storyboard */,
 				273F70821DA8CC7A000BFBC0 /* Assets.xcassets */,
 				273F70841DA8CC7A000BFBC0 /* LaunchScreen.storyboard */,
@@ -191,6 +197,9 @@
 		C00FFCBFC6CD15F0DD728CE7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				274C48A71DA9D2CE00A9DCF6 /* Alamofire.framework */,
+				274C48A81DA9D2CE00A9DCF6 /* Pods_goBiker.framework */,
+				274C48A91DA9D2CE00A9DCF6 /* Pulsator.framework */,
 				274C489E1DA97CDA00A9DCF6 /* Alamofire.framework */,
 				274C489F1DA97CDA00A9DCF6 /* ObjectMapper.framework */,
 				274C48A01DA97CDA00A9DCF6 /* Pulsator.framework */,
@@ -354,6 +363,7 @@
 				273F709C1DA8E29D000BFBC0 /* BikeViewModel.swift in Sources */,
 				273F70AC1DA91E1C000BFBC0 /* OrderWebService.swift in Sources */,
 				273F70A21DA8E550000BFBC0 /* TransactionViewModel.swift in Sources */,
+				274C48B01DAB39AB00A9DCF6 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,10 +490,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Pulsator",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = goBiker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = my.hongleongconnect.s.hongleongconnectWATCH.goBiker;
+				PRODUCT_BUNDLE_IDENTIFIER = my.hongleongconnect.s.hongleongconnectWATCH.goBiker2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -499,10 +511,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Pulsator",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = goBiker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = my.hongleongconnect.s.hongleongconnectWATCH.goBiker;
+				PRODUCT_BUNDLE_IDENTIFIER = my.hongleongconnect.s.hongleongconnectWATCH.goBiker2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
