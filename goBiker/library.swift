@@ -36,7 +36,7 @@ open func callingWebService (_ action:webservice)
         case .success:
            self.delegate!.successRespone(data:response.result.value!)
         case .failure( _):
-            self.delegate!.failedRespone(error:response.result.value!, retry: true)
+            self.delegate!.failedRespone(error:"Error connection not reachable", retry: true)
             
         }
     }
